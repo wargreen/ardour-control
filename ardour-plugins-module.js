@@ -5,7 +5,7 @@
     NO_RECEIVE_TEXT = 'No receive found'
 
     const dedupeWatch = {
-        duration: 100,
+        duration: 500,
         active: false,
         timeout: null,
         activate: ()=>{
@@ -17,7 +17,7 @@
         }
     }
 
-    const dedupeTimeoutDuration = 200
+    const dedupeTimeoutDuration = 1100
     const dedupeAddress = {
         '/strip/expand': {default:0, timeouts: []},
         '/strip/name': {default:' ', timeouts: []},
