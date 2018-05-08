@@ -5,8 +5,8 @@
     NO_RECEIVE_TEXT = 'No receive found'
 
     const dedupeWatch = {
-        delay: 250,
-        minduration: 1500,
+        delay: 100,
+        minduration: 500,
         active: false,
         timeout: null,
         activate: ()=>{
