@@ -5,8 +5,8 @@
     NO_RECEIVE_TEXT = 'No receive found'
 
     const dedupeWatch = {
-        delay: 100,
-        minduration: 500,
+        delay: 250,
+        duration: 1000,
         active: false,
         timeout: null,
         activate: ()=>{
@@ -14,7 +14,7 @@
             dedupeWatch.active = true
             dedupeWatch.timeout = setTimeout(()=>{
                 dedupeWatch.active = false
-            }, Math.max(dedupeWatch.delay * 2.5, dedupeWatch.minDuration))
+            }, Math.max(dedupeWatch.delay * 2, dedupeWatch.duration))
         }
     }
     const dedupeWatchTriggers = [
