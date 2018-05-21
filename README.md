@@ -32,13 +32,13 @@ open-stage-control -- -l path/to/ardour.js -c path/to/ardour-plugins-module.js -
 
 ## Know bug
 - With 5 or more ardour's channels, some OSC messages can be drop by the kernel. For fix it change the buffer size with :
- - for a temporary fix
-```
-# echo '1703936' > /proc/sys/net/core/rmem_default
-```
- - or a permanent fix
-```
-# echo 'net.core.rmem_default='1703936' >> /etc/sysctl.d/11-osc-net-patch.conf
-```
+    - for a temporary fix
+    ```
+    # echo '1703936' > /proc/sys/net/core/rmem_default
+    ```
+    - or a permanent fix
+    ```
+    # echo 'net.core.rmem_default='1703936' >> /etc/sysctl.d/11-osc-net-patch.conf
+    ```
 
 
